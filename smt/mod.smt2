@@ -1,0 +1,6 @@
+(set-logic QF_LIA)
+(declare-const x Int)
+(declare-const y Int)
+(assert (> (+ (mod x 4) (* 3 (div y 2))) (- x y)))
+(check-sat)
+(get-model)
